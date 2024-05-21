@@ -7,10 +7,10 @@
             </template>
 
             <template v-slot:default="{ isActive }">
-                <v-card title="Add a new tradition">
+                <v-card title="Add a new folio">
                     <v-card-text>
                         <v-text-field v-model="name" label="Name"></v-text-field>
-                        <v-text-field label="Position in folio" v-model="positionInManuscript"></v-text-field>
+                        <v-text-field label="Position in tradition" v-model="positionInManuscript"></v-text-field>
                         <v-file-input label="File input" v-model="folioImage"></v-file-input>
                     </v-card-text>
                     <v-card-actions>
