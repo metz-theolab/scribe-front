@@ -1,0 +1,210 @@
+[
+    {
+        "icon": "mdi-format-letter-matches",
+        "name": "Texte",
+        "shortname": "T",
+        "sub_menu":
+            [ {
+                "name": "Unclear Letter",
+                "tag": "unclear",
+                "attributes": [
+                    {
+                        "name": "reason",
+                        "widget": "drop_list",
+                        "value": [
+                            "legible-incomplete",
+                            "uncertain",
+                            "faded",
+                            "background-noise"
+                        ]
+                    }
+                ]
+            },
+        
+            {
+                "name": "Highlighted Letter or Word",
+                "tag": "hi",
+                "attributes": [
+                    {
+                        "name": "rend",
+                        "widget": "drop_list",
+                        "value": [
+                            "enlarged",
+                            "displaced-above",
+                            "displaced-below",
+                            "supralinear",
+                            "infralinear",
+                            "doted",
+                            "bigger"
+                        ]
+                    }
+                ]
+            },
+        
+            {
+                "name": "Deleted letter or word",
+                "tag": "del",
+                "attributes": [
+                    {
+                        "name": "rend",
+                        "widget": "drop_list",
+                        "value": [
+                        "erased",
+                        "strikethrough",
+                        "dotted",
+                        "underline",
+                        "other"    
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Abbreviation",
+                "tag": "abbr",
+                "attributes": [
+                    {
+                        "name": "type",
+                        "widget": "drop_list",
+                        "value": [
+                        "nomSac",
+                        "other"    
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Blank Space",
+                "tag": "space",
+                "attributes": [
+                    {
+                        "name": "unit",
+                        "widget": "drop_list",
+                        "value": [
+                        "char",
+                        "cm"
+                        ]
+                    }
+                    {
+                        "name": "extent",
+                        "widget": "input-int"
+                    }
+                    ]
+            }
+
+            ] 
+    },
+
+    {
+        "icon": "XXX",
+        "name": "Reconstruction",
+        "shortname": "R",
+        "sub_menu":
+            [ {
+                "name": "Reconstruction",
+                "tag": "supplied",
+                "attributes": [
+                    {
+                        "name": "reason",
+                        "widget": "drop_list",
+                        "value": [
+                        "lacuna",
+                        "illegible",
+                        "unspecified"
+                        ]
+                    }
+                    ]
+                }
+            ]
+    },
+
+    {
+        "icon": "XXX",
+        "name": "Marginal annotations",
+        "shortname": "M",
+        "sub_menu":
+            [ {
+                "name": "Margin",
+                "tag": "seg",
+                "attributes": [
+                    {
+                        "name": "type",
+                        "widget": "drop_list",
+                        "value": [
+                        "top-margin",
+                        "bottom-margin",
+                        "right-margin",
+                        "left-margin",
+                        "interlinear",
+                        "infralinear",
+                        "supralinear",
+                        "ketiv-qere"
+                        ]
+                    }
+                    {
+                        "name": "rend",
+                        "widget": "drop_list",
+                        "value": [
+                        "oblique",
+                        "vertical",
+                        "align-left",
+                        "align-center",
+                        "align-right"
+                        ]
+                    }
+                    {
+                        "name": "hand",
+                        "widget": "drop_list",
+                        "value": [
+                        "main-scribe",
+                        "scribe-a",
+                        "scribe-b",
+                        "scribe-c",
+                        "scribe-d"
+                        ]
+                    }
+                    ]
+                }
+            ]
+    },
+
+    {
+        "icon": "mdi-file-tree-outline",
+        "name": "Structure",
+        "shortname": "S",
+        "sub_menu":
+            [ {
+                "name": "Chapter, verse, inscriptio, subscriptio",
+                "tag": "div",
+                "attributes": [
+                    {
+                        "name": "type",
+                        "widget": "drop_list",
+                        "value": [
+                        "chapter",
+                        "verse",
+                        "inscriptio",
+                        "subscriptio"
+                        ]
+                    }
+                    {
+                        "name": "n",
+                        "widget": "input-int"
+                    }
+                    ]
+                },
+                {
+                    "name": "Stich Break",
+                    "tag": "stich /"
+                },
+                {
+                    "name": "Top Page",
+                    "tag": "top-page /"
+                },
+                {
+                    "name": "Bottom Page",
+                    "tag": "bottom-page /",
+                }
+            ]
+    }
+    
+]
